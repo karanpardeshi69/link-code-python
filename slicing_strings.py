@@ -51,4 +51,9 @@ x = "programming"
 for i in x:
     if ord(i) % 2 !=0:
         print(i,ord(i))
-    
+
+unique = ""
+for ch in x:
+    if ch not in unique:
+        unique+=ch 
+print(unique)
