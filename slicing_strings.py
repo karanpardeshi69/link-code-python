@@ -57,3 +57,10 @@ for ch in x:
     if ch not in unique:
         unique+=ch 
 print(unique)
+
+x  = "I Like python programming"
+ct = 1
+for i in x:
+    if i in " ":
+        ct+=1
+print("Count of words" , ct)
