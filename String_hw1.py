@@ -35,10 +35,10 @@ for ch in x:
 print("Capitalize string :",result)
 
 # whitespace remove
-x = "  hey"
+x = " hey"
 result = ""
 for ch in x:
-    if ch != " ":
+    if " " not in ch:
         result += ch
 
 print("without white space:",result)
