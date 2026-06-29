@@ -23,7 +23,7 @@ r.shuffle(x)
 print(x)
 print("--------------------------------------------------------------------------------------------------------------")
 #date & time
-d = datetime.datetime.now()
+d = datetime.datetime.now()#timetsamp
 print(d)
 print(d.time())
 print(d.day)

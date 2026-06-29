@@ -1,6 +1,6 @@
-import calci 
+from calci import add,sub,mul,div
 
-print(calci.add(10,5))
-print(calci.sub(10,5))
-print(calci.mul(10,5))
-print(calci.div(10,5))
+print(add(10,5))
+print(sub(10,5))
+print(mul(10,5))
+print(div(10,5))
