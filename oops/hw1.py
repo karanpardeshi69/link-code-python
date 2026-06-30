@@ -9,8 +9,8 @@ class product:
         self.qty = qty
         self.price = price
 
-p1 = product(101,"cream","lays",2026,2028,22,40)
-p2 = product(102,"hot","lays",2024,2028,39,45)
+p1 = product(101,"creamy","lays",2026,2028,22,40)
+p2 = product(102,"spicy","lays",2024,2028,39,45)
 p3 = product(103,"classic","balaji",2025,2027,65,30)
 p4 = product(104,"chilli","balaji",2022,2027,23,20)
 all_prod = [p1,p2,p3,p4]
@@ -26,18 +26,6 @@ def print_all(all):
             print("price:",i.price)
             print("---------------------------------------")
 
-def search(str,all):
-    for i in all:
-        if i.brand == str:
-            print("---------------------------------------")
-            print("Product ID:",i.id)
-            print("Name:",i.name)
-            print("Brand:",i.brand)
-            print("Manufacturing date:",i.mfg)
-            print("Expiry date:",i.exp)
-            print("Available Quantity:",i.qty)
-            print("price:",i.price)
-            print("---------------------------------------")
 
 while True:
     print("Hello.. please select any option\n1.all details\n2.search\n3.purchase\n4.exit")
@@ -46,15 +34,37 @@ while True:
         case 1:
             print_all(all_prod)
         case 2:
-            print("select from below:\n1.brand\n2.name")
+            print("select from below:\n1.brand\n2.name\n3.MFG")
             ch1 = int(input("Enter your choice:"))
             match ch1:
                 case 1:
                      brand_1 = input("Enter brand name to search:")
-                     search(brand_1,all_prod)
+                     for i in all:
+                        if i.brand == brand_1:
+                            print("---------------------------------------")
+                            print("Product ID:",i.id)
+                            print("Name:",i.name)
+                            print("Brand:",i.brand)
+                            print("Manufacturing date:",i.mfg)
+                            print("Expiry date:",i.exp)
+                            print("Available Quantity:",i.qty)
+                            print("price:",i.price)
+                            print("---------------------------------------")
+
                 case 2:
                     name_1 = input("Enter product name to search:")
-                    search(name_1,all_prod)
+                    for i in all:
+                        if i.name == name_1:
+                            print("---------------------------------------")
+                            print("Product ID:",i.id)
+                            print("Name:",i.name)
+                            print("Brand:",i.brand)
+                            print("Manufacturing date:",i.mfg)
+                            print("Expiry date:",i.exp)
+                            print("Available Quantity:",i.qty)
+                            print("price:",i.price)
+                            print("---------------------------------------")
+
         case 3:
             pid = int(input("Enter Product ID: "))
             buy_qty = int(input("Enter Quantity to purchase: "))
