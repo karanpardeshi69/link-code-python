@@ -4,7 +4,7 @@ class mobile:
         self.brand = ubrand
         self.color = ucolor
         self.price = uprice
-    
+#obj
 obj = mobile("Iphone15","Apple","Black","1000")
 obj2 = mobile("Iphone16","Apple","Blue","2000")
 print(obj.name,obj.color,obj.brand,obj.price)
