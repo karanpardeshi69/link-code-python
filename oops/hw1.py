@@ -34,7 +34,7 @@ while True:
         case 1:
             print_all(all_prod)
         case 2:
-            print("select from below:\n1.brand\n2.name\n3.MFG")
+            print("select from below:\n1.brand\n2.name")
             ch1 = int(input("Enter your choice:"))
             match ch1:
                 case 1:
