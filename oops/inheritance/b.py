@@ -1,9 +1,9 @@
 from a import engine
 class car:
-    def __init__(self):
+    def __init__(self,uip):
         self.age = 90
-        self.a = engine()
+        self.a = engine(uip)
 
-obj = car()
-print(obj.age)
-print(obj.a.name)
+obj = car(200)
+print(obj.age,obj.a.name,obj.a.horsepower)
+print(engine.brand)
