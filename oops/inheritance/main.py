@@ -1,5 +1,3 @@
-# from bank_account import bank
-# from savings_account import savings_acc
 from premimumSA import premimum
 
 while True:
